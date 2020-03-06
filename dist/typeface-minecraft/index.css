@@ -6,7 +6,6 @@
   src:
     local("Minecraft "),
     local("Minecraft"),
-    url("./files/minecraft.woff2") format("woff2"),
     url("./files/minecraft.woff") format("woff");
 }
 
