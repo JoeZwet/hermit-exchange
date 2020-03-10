@@ -30,8 +30,26 @@
     },
     "by":[
       {
-        "uuid":"bcdc48a5-7d87-4331-a566-ac6deb99d21b",
+        "uuid":"ed260cac-54e4-4ee5-b4de-d289f197fa45",
         "name":"keralis"
+      }
+    ]
+  },
+  {
+    "selling":{
+      "icon":"item#enchanted_book",
+      "item":"Mending Book",
+      "count":1
+    },
+    "price":{
+      "icon":"block#BLOCK_OF_DIAMOND",
+      "item":"Diamond Block",
+      "count":1
+    },
+    "by":[
+      {
+        "uuid":"05e88dce-714d-4218-be77-fade8b5dfa3c",
+        "name":"Docm77"
       }
     ]
   }
