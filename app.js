@@ -11,7 +11,7 @@ function getPricesJson() {
 
 function parseIcon(icon) {
     let parts = icon.split("#");
-    return "assets/" + parts[0] + "s/" + parts[1] + ".png";
+    return `assets/${parts[0]}s/${parts[1]}.png`
 }
 
 function display(json) {
@@ -34,26 +34,26 @@ function createItem(j) {
     price.className = "mdl-data-table__cell--non-numeric";
     by.className = "mdl-data-table__cell--non-numeric";
 
-    sellingItem.src = parseIcon(j["selling"]["icon"]);
+    sellingItem.src = parseIcon(j['selling']['icon']);
     sellingItem.width = 16;
     sellingItem.height = 16;
-    priceItem.src = parseIcon(j["price"]["icon"]);
+    priceItem.src = parseIcon(j['price']['icon']);
     priceItem.width = 16;
     priceItem.height = 16;
 
     selling.appendChild(sellingItem);
-    selling.appendChild(document.createTextNode(" " + j.selling.item + " x" + j.selling.count));
+    selling.appendChild(document.createTextNode(` ${j['selling']['item']} x${j['selling']['count']}`));
     price.appendChild(priceItem);
-    price.appendChild(document.createTextNode(" " + j.price.item + " x" + j.price.count));
+    price.appendChild(document.createTextNode(` ${j['price']['item']} x${j['price']['count']}`));
 
     for(let h in j.by) {
         let hermit = j.by[h];
         let face = document.createElement("img");
-        face.src = "https://crafatar.com/avatars/" + hermit.uuid + "?size=30&default=MHF_Steve&overlay";
+        face.src = `https://crafatar.com/avatars/${hermit.uuid}?size=30&default=MHF_Steve&overlay`;
         face.width = 30;
         face.height = 30;
 
-        let name = document.createTextNode(" " + hermit.name + " ");
+        let name = document.createTextNode(` ${hermit.name} `);
 
         by.appendChild(face);
         by.appendChild(name);
