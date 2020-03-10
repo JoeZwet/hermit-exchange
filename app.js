@@ -1,5 +1,5 @@
 function getPricesJson() {
-    const jsonUrl = "https://gitcdn.link/repo/JoeZwet/hermit-exchange/master/data/prices.json";
+    const jsonUrl = "https://raw.githubusercontent.com/JoeZwet/hermit-exchange/master/data/prices.json";
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
