@@ -42,7 +42,7 @@
       "count":1
     },
     "price":{
-      "icon":"item#diamond_block",
+      "icon":"block#BLOCK_OF_DIAMOND",
       "item":"Diamond Block",
       "count":1
     },
