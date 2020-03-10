@@ -1,0 +1,20 @@
+[
+  {
+    "selling": {
+      "icon": "item#slime_ball",
+      "item": "Slime Ball",
+      "count": 32
+    },
+    "for": {
+      "icon": "item#diamond",
+      "item": "Diamond",
+      "count": 1
+    },
+    "by": [
+      {
+        "uuid": "7ed3587b-e656-4689-90d6-08e11daaf907",
+        "name": "iskall85"
+      }
+    ]
+  }
+]
