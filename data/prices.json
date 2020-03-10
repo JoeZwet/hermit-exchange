@@ -1,19 +1,37 @@
 [
   {
-    "selling": {
-      "icon": "item#slime_ball",
-      "item": "Slime Ball",
-      "count": 32
+    "selling":{
+      "icon":"item#slime_ball",
+      "item":"Slime Ball",
+      "count":32
     },
-    "price": {
-      "icon": "item#diamond",
-      "item": "Diamond",
-      "count": 1
+    "price":{
+      "icon":"item#diamond",
+      "item":"Diamond",
+      "count":1
     },
-    "by": [
+    "by":[
       {
-        "uuid": "7ed3587b-e656-4689-90d6-08e11daaf907",
-        "name": "iskall85"
+        "uuid":"7ed3587b-e656-4689-90d6-08e11daaf907",
+        "name":"iskall85"
+      }
+    ]
+  },
+  {
+    "selling":{
+      "icon":"item#enchanted_book",
+      "item":"Mending Book",
+      "count":1
+    },
+    "price":{
+      "icon":"item#diamond",
+      "item":"Diamond",
+      "count":5
+    },
+    "by":[
+      {
+        "uuid":"bcdc48a5-7d87-4331-a566-ac6deb99d21b",
+        "name":"keralis"
       }
     ]
   }
