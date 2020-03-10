@@ -17,12 +17,58 @@
     <meta name="og:description" content="The Unofficial HermitCraft store and price list."/>
 
     <!-- css -->
-    <link rel="stylesheet" href="/dist/mdl/material.min.css">
-    <script src="/dist/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="dist/mdl/material.min.css">
+    <script src="dist/mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/dist/typeface-minecraft/index.css">
+    <link rel="stylesheet" href="dist/typeface-minecraft/index.css">
 </head>
 <body>
-<h1 class="minecraft-black" style="font-family: 'Minecraft',serif">Coming Soon</h1>
+<div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">The Hermit Exchange</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link is-active" href="javascript:void(null);">Stores</a>
+                <!--<a class="mdl-navigation__link" href="/hermits">Hermits</a>-->
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">The Hermit Exchange</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="javascript:void(null);">Price List</a>
+            <!--<a class="mdl-navigation__link" href="/hermits">Hermits</a>-->
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <center>
+            <div class="page-content" style="padding: 50px">
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" >
+                    <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Selling</th>
+                        <th class="mdl-data-table__cell--non-numeric">Price</th>
+                        <th class="mdl-data-table__cell--non-numeric">By</th>
+                    </tr>
+                    </thead>
+                    <tbody style="font-family: Minecraft,serif" id="prices-body">
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </main>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">The Hermit Exchange</div>
+            <ul class="mdl-mini-footer__link-list">
+                <li>A <a href="https://joezwet.me">JoeZwet</a> project.</li>
+                <li>Minecraft assets are Copyright &copy; of <a href="https://account.mojang.com/documents/minecraft_eula" target="_blank">Mojang AB</a>. This project has no affiliation with Mojang and is not maintained by any of its staff.</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+    <script src="app.js"></script>
 </body>
 </html>
