@@ -55,24 +55,6 @@
    },
   {
     "selling":{
-      "icon":"item#enchanted_book",
-      "item":"Mending Book",
-      "count":1
-    },
-    "price":{
-      "icon":"item#diamond",
-      "item":"Diamond",
-      "count":5
-    },
-    "by":[
-      {
-        "uuid":"ed260cac-54e4-4ee5-b4de-d289f197fa45",
-        "name":"keralis"
-      }
-    ]
-  },
-  {
-    "selling":{
       "icon":"item#steak",
       "item":"Steak",
       "count":64
