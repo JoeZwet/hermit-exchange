@@ -55,7 +55,7 @@
    },
   {
     "selling":{
-      "icon":"item#steak",
+      "icon":"item#cooked_beef",
       "item":"Steak",
       "count":64
     },
