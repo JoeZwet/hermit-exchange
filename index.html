@@ -6,6 +6,7 @@
     <meta name="keywords" content="hermitcraft, hermit, minecraft, smp, survival, exchange, shops"/>
     <meta name="description" content="The Unofficial HermitCraft store and price list."/>
     <meta name="author" content="Joe van der Zwet, contact@joezwet.me">
+    <link rel="manifest" href="/manifest.json">
     <title>The Hermit Exchange</title>
 
     <!-- Open Graph Tags -->
@@ -53,10 +54,10 @@
     </div>
     <main class="mdl-layout__content">
         <center>
-            <div class="page-content" style="padding: 50px">
+            <div class="page-content" style="padding-top: 50px; padding-bottom: 50px;">
                 <div id="progress" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
 
-                <form action="javascript:void(null);" hidden>
+                <form action="javascript:void(null);">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="text" id="search">
                         <label class="mdl-textfield__label" for="search">Search...</label>
@@ -90,5 +91,10 @@
 </div>
 
     <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
 </body>
 </html>

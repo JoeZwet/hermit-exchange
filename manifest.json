@@ -1,0 +1,17 @@
+{
+    "short_name": "Hermit Exchange",
+    "name": "The Hermit Exchange",
+    "description": "View prices of items on the Hermitcraft server.",
+    "icons": [
+      {
+        "src": "/assets/og.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3F4EB8",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3F4EB8"
+  }
