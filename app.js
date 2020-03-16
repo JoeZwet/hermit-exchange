@@ -24,6 +24,7 @@ function display(json) {
         document.getElementById("prices-body").appendChild(createItem(json[j]));
     }
     document.getElementById('progress').hidden = true;
+    document.getElementsByTagName("form")[0].hidden = false;
     document.getElementById('price-table').hidden = false;
 }
 
