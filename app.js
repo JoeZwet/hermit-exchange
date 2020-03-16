@@ -1,9 +1,13 @@
+let json = null;
+
 function getPricesJson() {
     const jsonUrl = "https://raw.githubusercontent.com/JoeZwet/hermit-exchange/master/data/prices.json";
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
-            display(JSON.parse(xmlHttp.responseText));
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            json = JSON.parse(xmlHttp.responseText);
+            display(json);
+        }
     };
     xmlHttp.open("GET", jsonUrl, true); // true for asynchronous
     xmlHttp.send(null);
@@ -18,6 +22,27 @@ function display(json) {
     console.log(json);
     for (let j in json) {
         document.getElementById("prices-body").appendChild(createItem(json[j]));
+    }
+    document.getElementById('progress').hidden = true;
+    document.getElementById('price-table').hidden = false;
+}
+
+function filter() {
+    let text = document.getElementById("search").value;
+    document.getElementById('prices-body').innerHTML = "";
+    for (let j in json) {
+
+        if((json[j]['selling']['item'].toUpperCase()).includes(text.toUpperCase())) {
+            document.getElementById("prices-body").appendChild(createItem(json[j]));
+        } else {
+            for(let h in json[j]['by']) {
+                let hermit = json[j]['by'][h];
+                if(hermit.name.toUpperCase().includes(text.toUpperCase())) {
+                    document.getElementById("prices-body").appendChild(createItem(json[j]));
+                    break;
+                }
+            }
+        }
     }
 }
 
@@ -68,4 +93,9 @@ function createItem(j) {
 window.addEventListener('load',
     function() {
         getPricesJson();
+    }, false);
+
+document.getElementById('search').addEventListener('input',
+    function () {
+        filter();
     }, false);

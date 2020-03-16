@@ -54,7 +54,17 @@
     <main class="mdl-layout__content">
         <center>
             <div class="page-content" style="padding: 50px">
-                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" >
+                <div id="progress" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+                <form action="javascript:void(null);">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Search...</label>
+                    </div>
+                </form>
+
+                <!-- prices table -->
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="price-table" hidden>
                     <thead>
                     <tr>
                         <th class="mdl-data-table__cell--non-numeric">Selling</th>
